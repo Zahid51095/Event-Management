@@ -1,0 +1,50 @@
+[
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab6b",
+        "name": "Event Planning",
+        "image_url": "https://i.ibb.co/hFC8Cnd/appointment-agenda-reminder-personal-organizer-calendar-concept.jpg",
+        "price": "$5000",
+        "short_description": "Comprehensive event planning services.",
+        "button": "Learn More"
+    },
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab6c",
+        "name": "Catering",
+        "image_url": "https://i.ibb.co/Fqs6T5w/closed-metal-pots.jpg",
+        "price": "$2500",
+        "short_description": "Delicious catering options for your event.",
+        "button": "Order Now"
+    },
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab6d",
+        "name": "Audio-Visual Equipment Rental",
+        "image_url": "https://i.ibb.co/tYNPDgk/sound-engineer-working-studio-with-equipment.jpg",
+        "price": "$1000",
+        "short_description": "Top-quality AV equipment for your event.",
+        "button": "Rent Now"
+    },
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab6e",
+        "name": "Photography Services",
+        "image_url": "https://i.ibb.co/YTRmkDP/blur-photo-workplace-with-camera-memory-cards-foreground-modern-computer-stands-white-table-with-not.jpg",
+        "price": "$1200",
+        "short_description": "Capture memorable moments with our photography services.",
+        "button": "Book Now"
+    },
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab6f",
+        "name": "Venue Rental",
+        "image_url": "https://i.ibb.co/4Wffsbr/classic-restaurant-witn-red-curtains-stage.jpg",
+        "price": "$3000",
+        "short_description": "Elegant venues for your corporate events.",
+        "button": "Reserve Now"
+    },
+    {
+        "_id": "0282e0e58a5c404fbd15261f11c2ab70",
+        "name": "Entertainment Packages",
+        "image_url": "https://i.ibb.co/8rdMqLd/young-caucasian-family-watching-film-movie-theater-house-cinema-look-expressive-astonished-emotional.jpg",
+        "price": "$1800",
+        "short_description": "Exciting entertainment options for your guests.",
+        "button": "See Options"
+    }
+]
