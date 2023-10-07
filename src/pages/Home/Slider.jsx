@@ -11,7 +11,7 @@ const Slider = () => {
       <button className="btn btn-secondary">Recent Events</button>
       <Marquee pauseOnHover={true}>
         <Link to="/">
-          <div className="card w-96 h-96 bg-base-100 shadow-xl mr-12">
+          <div className="card w-56 h-56 bg-base-100 shadow-xl mr-12">
             <div className="card-body">
               <h2 className="card-title">Seminar By Bata</h2>
             </div>
@@ -22,7 +22,7 @@ const Slider = () => {
         </Link>
 
         <Link className="mr-12" to="/">
-          <div className="card w-96 h-96 bg-base-100 shadow-xl mr-12">
+          <div className="card w-56 h-56 bg-base-100 shadow-xl mr-12">
             <div className="card-body">
               <h2 className="card-title">Trade Show and Expo By Aarong</h2>
             </div>
@@ -33,7 +33,7 @@ const Slider = () => {
         </Link>
 
         <Link className="mr-12" to="/">
-          <div className="card w-96 h-96 bg-base-100 shadow-xl mr-12">
+          <div className="card w-56 h-56 bg-base-100 shadow-xl mr-12">
             <div className="card-body">
               <h2 className="card-title">Award Giving Ceremony By Orbitax</h2>
             </div>
@@ -44,7 +44,7 @@ const Slider = () => {
         </Link>
 
         <Link className="mr-12" to="/">
-          <div className="card w-96 h-96 bg-base-100 shadow-xl mr-12">
+          <div className="card w-56 h-56 bg-base-100 shadow-xl mr-12">
             <div className="card-body">
               <h2 className="card-title">Corporate meeting By Grameenphone </h2>
             </div>
