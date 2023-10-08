@@ -4,7 +4,7 @@
         "name": "Event Planning",
         "image_url": "https://i.ibb.co/hFC8Cnd/appointment-agenda-reminder-personal-organizer-calendar-concept.jpg",
         "price": "$5000",
-        "short_description": "Comprehensive event planning services.",
+        "description": "Experience stress-free event planning with our comprehensive services. We take care of every detail to make your event a success.",
         "button": "Learn More"
     },
     {
@@ -12,7 +12,7 @@
         "name": "Catering",
         "image_url": "https://i.ibb.co/Fqs6T5w/closed-metal-pots.jpg",
         "price": "$2500",
-        "short_description": "Delicious catering options for your event.",
+        "description": "Indulge your guests with our delicious catering options. From mouthwatering appetizers to exquisite desserts, we'll ensure your event is a culinary delight.",
         "button": "Order Now"
     },
     {
@@ -20,7 +20,7 @@
         "name": "Audio-Visual Equipment Rental",
         "image_url": "https://i.ibb.co/tYNPDgk/sound-engineer-working-studio-with-equipment.jpg",
         "price": "$1000",
-        "short_description": "Top-quality AV equipment for your event.",
+        "description": "Elevate your event with top-quality AV equipment. Our state-of-the-art gear guarantees crystal-clear sound and stunning visuals for an immersive experience.",
         "button": "Rent Now"
     },
     {
@@ -28,7 +28,7 @@
         "name": "Photography Services",
         "image_url": "https://i.ibb.co/YTRmkDP/blur-photo-workplace-with-camera-memory-cards-foreground-modern-computer-stands-white-table-with-not.jpg",
         "price": "$1200",
-        "short_description": "Capture memorable moments with our photography services.",
+        "description": "Preserve the magic of your event with our photography services. Our skilled photographers capture every moment, creating lasting memories to cherish.",
         "button": "Book Now"
     },
     {
@@ -36,7 +36,7 @@
         "name": "Venue Rental",
         "image_url": "https://i.ibb.co/4Wffsbr/classic-restaurant-witn-red-curtains-stage.jpg",
         "price": "$3000",
-        "short_description": "Elegant venues for your corporate events.",
+        "description": "Host your corporate events in elegant venues that exude sophistication. Our spaces are designed to impress and provide the perfect backdrop for your gatherings.",
         "button": "Reserve Now"
     },
     {
@@ -44,7 +44,7 @@
         "name": "Entertainment Packages",
         "image_url": "https://i.ibb.co/8rdMqLd/young-caucasian-family-watching-film-movie-theater-house-cinema-look-expressive-astonished-emotional.jpg",
         "price": "$1800",
-        "short_description": "Exciting entertainment options for your guests.",
+        "description": "Keep your guests entertained and engaged with our exciting entertainment options. Whether it's live performances or interactive activities, we create memorable experiences.",
         "button": "See Options"
     }
 ]
