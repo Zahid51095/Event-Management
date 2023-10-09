@@ -21,6 +21,7 @@ const Home = () => {
                     <LeftSideNav></LeftSideNav>
                 </div>
                 <div className="md:col-span-2">
+                    <h2 className="text-3xl mb-4">Our Services</h2>
                     {
                         cards.map(card => <ServiceCard
                         key={card._id}
