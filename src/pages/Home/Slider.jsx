@@ -5,6 +5,7 @@ import slider3 from "../../assets/slider3.png";
 import slider4 from "../../assets/slider4.png";
 import { Link } from "react-router-dom";
 
+
 const Slider = () => {
   return (
     <div className="mb-8">

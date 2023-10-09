@@ -1,16 +1,25 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Import AOS CSS
+import { useEffect } from 'react';
 
 
 
 const ServiceCard = ({ cards }) => {
 
+  useEffect(() => {
+    AOS.init({
+      // You can set global options here if needed
+    });
+  }, []); 
+
   const { name, image_url, button, description, price, _id } = cards;
   return (
    
    <div>
-      <div className="card bg-base-100 shadow-xl mb-16">  
+      <div data-aos="zoom-in" className="card bg-base-100 shadow-xl mb-16">  
       <figure>
         <img
           src={image_url}
