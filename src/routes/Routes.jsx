@@ -7,12 +7,14 @@ import Card from "../pages/Cards/Card";
 import PrivateRoute from "./PrivateRoute";
 import About from "../pages/About/About";
 import ContactUs from "../pages/Contact/ContactUs";
+import Error from "../pages/Error/Error";
 
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children: [
             {
                 path: '/',
