@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 
 
 const Register = () => {
+    const [registerError, setRegisterError] = useState('');
 
     const { createUser } = useContext(AuthContext)
 
@@ -19,6 +20,16 @@ const Register = () => {
         const password = form.get('password');
         console.log(name, photo, email, password);
 
+        setRegisterError('');
+
+        if(password.length < 6){
+          setRegisterError('Password should be at least 6 characters or longer');
+          return;
+        }
+
+
+       
+
 
         createUser(email, password)
             .then(result => {
@@ -31,6 +42,7 @@ const Register = () => {
             })
             .catch(error => {
                 console.log(error);
+                setRegisterError(error.message);
             })
     }
 
@@ -98,6 +110,9 @@ const Register = () => {
               </div>
         </form>
         <p className="text-center mt-4">Already have an account ? <Link className="text-blue-600 font-bold" to="/login">Login</Link></p>
+        {
+          registerError && <p className="text-red-600">{registerError}</p>
+        }
       </div>
         </div>
     );

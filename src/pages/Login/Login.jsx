@@ -21,7 +21,7 @@ const Login = () => {
             console.log(result.user);
             Swal.fire(
               'Good job!',
-              'You have loggedin successfully!',
+              'You have registered successfully!',
               'success'
             )
 
