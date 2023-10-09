@@ -1,10 +1,12 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 
 const Login = () => {
+    const [loginError, setLoginError] = useState('');
+
     const { signIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
@@ -16,6 +18,9 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+
+        setLoginError('');
+
         signIn(email, password)
         .then(result =>{
             console.log(result.user);
@@ -30,6 +35,7 @@ const Login = () => {
         })
         .catch(error =>{
             console.log(error);
+            setLoginError(error.message);
         })
     }
 
@@ -74,6 +80,9 @@ const Login = () => {
               </div>
         </form>
         <p className="text-center mt-4">Do not have an account ? <Link className="text-blue-600 font-bold" to="/register">Register</Link></p>
+        {
+          loginError && <p className="text-red-600">{loginError}</p>
+        }
       </div>
     </div>
   );
