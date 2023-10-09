@@ -14,6 +14,11 @@ const Login = () => {
     const handleGoogle = () => {
       googleSignIn().then(result => {
         console.log(result.user);
+        Swal.fire(
+          'Good job!',
+          'You have registered successfully!',
+          'success'
+        )
       });
     }
 

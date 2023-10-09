@@ -8,7 +8,7 @@ import Swal from "sweetalert2";
 const Register = () => {
     const [registerError, setRegisterError] = useState('');
 
-    const { createUser } = useContext(AuthContext)
+    const { createUser,  updateAuser } = useContext(AuthContext)
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -47,6 +47,10 @@ const Register = () => {
                   'You have registered successfully. Please login to enjoy!',
                   'success'
                 )
+
+        updateAuser()
+
+        
             })
             .catch(error => {
                 console.log(error);
