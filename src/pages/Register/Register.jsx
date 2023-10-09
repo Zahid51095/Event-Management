@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 
 const Register = () => {
@@ -22,6 +23,11 @@ const Register = () => {
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
+                Swal.fire(
+                  'Good job!',
+                  'You have registered successfully. Please login to enjoy!',
+                  'success'
+                )
             })
             .catch(error => {
                 console.log(error);

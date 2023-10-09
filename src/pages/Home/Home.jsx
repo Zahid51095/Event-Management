@@ -8,7 +8,7 @@ import ServiceCard from "./ServiceCard";
 
 const Home = () => {
     const cards = useLoaderData();
-    console.log(cards);
+    // console.log(cards);
     return (
         <div>
             <Header></Header>

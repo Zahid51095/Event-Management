@@ -1,10 +1,13 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../shared/Navbar/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -15,7 +18,15 @@ const Login = () => {
         console.log(email, password);
         signIn(email, password)
         .then(result =>{
-            console.log(result.error);
+            console.log(result.user);
+            Swal.fire(
+              'Good job!',
+              'You have loggedin successfully!',
+              'success'
+            )
+
+            navigate(location?.state ? location.state : '/');
+
         })
         .catch(error =>{
             console.log(error);
