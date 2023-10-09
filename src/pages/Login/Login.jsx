@@ -7,9 +7,15 @@ import Swal from "sweetalert2";
 const Login = () => {
     const [loginError, setLoginError] = useState('');
 
-    const { signIn } = useContext(AuthContext);
+    const { signIn, googleSignIn } = useContext(AuthContext);
     const location = useLocation();
     const navigate = useNavigate();
+
+    const handleGoogle = () => {
+      googleSignIn().then(result => {
+        console.log(result.user);
+      });
+    }
 
     const handleLogin = e =>{
         e.preventDefault();
@@ -84,6 +90,9 @@ const Login = () => {
           loginError && <p className="text-red-600">{loginError}</p>
         }
       </div>
+      <div className="text-center mt-4">
+          <button onClick={handleGoogle} className="btn btn-primary">Google Login</button>
+        </div>
     </div>
   );
 };
