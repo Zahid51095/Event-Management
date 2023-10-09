@@ -5,6 +5,7 @@ import Navbar from "../shared/Navbar/Navbar";
 import RightSideNav from "../shared/RightSideNav/RightSideNav";
 import Slider from "./Slider";
 import ServiceCard from "./ServiceCard";
+import Footer from "./Footer/Footer";
 
 const Home = () => {
     const cards = useLoaderData();
@@ -12,8 +13,9 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            <Slider></Slider>
             <Navbar></Navbar>
+            <Slider></Slider>
+            
             <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                 <div className="">
                     <LeftSideNav></LeftSideNav>
@@ -33,6 +35,7 @@ const Home = () => {
                     <RightSideNav></RightSideNav>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };

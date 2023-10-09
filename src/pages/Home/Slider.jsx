@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 
 const Slider = () => {
   return (
-    <div>
-      <button className="btn btn-secondary">Recent Events</button>
+    <div className="mb-8">
+      <button className="btn btn-secondary mb-4">Recent Events</button>
       <Marquee pauseOnHover={true}>
         <Link to="/">
           <div className="card w-56 h-56 bg-base-100 shadow-xl mr-12">
